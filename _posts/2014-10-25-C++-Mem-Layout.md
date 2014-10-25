@@ -48,11 +48,9 @@ class CBase {
 };
 </pre></code>
 因此sizeof CBase 大小是 sizeof int + sizeof char = 5
-
 问题来了，相同代码段，如何操作不同对象的数据？
 各对象有自己的this指针，
 <pre><code>
 CBase b;
 b.printHello();
-
 </pre></code>
