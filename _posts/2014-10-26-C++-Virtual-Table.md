@@ -2,6 +2,10 @@
 layout:post
 title:C++ Virtual Table
 ---
+
+{{ page.title }}
+================
+
 ##概念
 来个例子
 <pre>
