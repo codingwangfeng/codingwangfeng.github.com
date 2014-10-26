@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Generic Programming
+title: cplusplus generic programming
 ---
 
 {{ page.title }}
