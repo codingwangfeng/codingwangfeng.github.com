@@ -1,6 +1,6 @@
 ---
 layout: post
-title: sizeof(class)
+title: c++ sizeof classname
 ---
 
 {{ page.title }}
