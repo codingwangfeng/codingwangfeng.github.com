@@ -146,9 +146,14 @@ class CChildInt: public CBase{
     private:
         int i;
 };
+class CChildPtr: public CBase{
+    private:
+        int* i;
+};
 int main(int argc, char** argv) {
     std::cout << sizeof(CChildChar) << std::endl;
     std::cout << sizeof(CChildInt) << std::endl;
+    std::cout << sizeof(CChildPtr) << std::endl;
     return 0;
 }
 </code>
