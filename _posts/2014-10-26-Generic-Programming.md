@@ -1,10 +1,11 @@
 ---
 layout:post
-title:泛型技术
+title:Generic Programming
 ---
 
 {{ page.title }}
 ================
+
 ##模板技术
 ##RTTI技术
 ##虚函数技术
