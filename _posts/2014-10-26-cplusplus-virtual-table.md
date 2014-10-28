@@ -1,6 +1,6 @@
 ---
-layout:post
-title:cplusplus virtual table
+layout: post
+title: cplusplus virtual table
 ---
 
 {{ page.title }}
