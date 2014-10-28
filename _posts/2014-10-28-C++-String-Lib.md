@@ -1,13 +1,11 @@
-/*---
 layout: post
-title: C++ sizeof classname
+title: C++ string lib
 ---
 
 {{ page.title }}
 ================
 <code>
 <pre>
-*/
 #include <string>
 #include <vector>
 
@@ -93,10 +91,5 @@ string replace(const string& str, const string& src, const string& dest) {
     }
     return ret;
 }
-int main(){
-    return 0;
-}
-/*
 </code>
 </pre>
-*/
