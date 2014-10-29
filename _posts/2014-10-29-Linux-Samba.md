@@ -17,11 +17,11 @@ title: Linux Samba
 >netbios name = stevinwang
 >server string = Linux Samba Server TestServer
 >security = user
-> [search]
-> path = /search/
-> writeable = yes
-> browseable = yes 
-> guest ok = yes
+>[search]
+>path = /search/
+>writeable = yes
+>browseable = yes 
+>guest ok = yes
 
 账户设置
 >smbpasswd -a username
