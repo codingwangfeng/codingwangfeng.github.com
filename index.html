@@ -10,4 +10,10 @@ title: WangFeng's Blog
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
+  <h1>About C++</h1>
+  <ul class="posts">
+    {% for c++ in site.c++s %}
+      <li><span>{{ c++.date | date_to_string }}</span> &raquo; <a href="{{ c++.url }}">{{ c++.title }}</a></li>
+    {% endfor %}
+  </ul>
 </div>
