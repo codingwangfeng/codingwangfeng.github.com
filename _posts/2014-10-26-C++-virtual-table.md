@@ -44,6 +44,10 @@ CChild::v1
 <pre>
 <code>
 class CBase {
+    public:
+        virtual void v1(){
+            std::cout << "CBase::" << __func__ << std::endl;
+        }
 };
 </code>
 </pre>
