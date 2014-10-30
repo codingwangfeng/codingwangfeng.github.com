@@ -38,3 +38,6 @@ int main(int argc, char** argv) {
 <pre><code>CBase::v1
 CChild::v1
 </code></pre>
+虚函数表是一种支持C++多态的机制。
+当一个类定义一个虚函数的时候，多数编译器会生成一个隐藏的变量，这个变量是一个指向这个虚函数表（VMT/VTable）的指针。
+这个VTable本质是虚函数指针数组，虚函数表地址在类开头，这是为了能够更高效获取虚函数？
