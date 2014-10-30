@@ -13,12 +13,10 @@ mv smb.conf smb.confbak
 touch smb.conf
 
 如下配置
-[global]     
 workgroup = LinuxSir
 netbios name = stevinwang
 server string = Linux Samba Server TestServer
 security = user
-[search]
 path = /search/
 writeable = yes
 browseable = yes 
