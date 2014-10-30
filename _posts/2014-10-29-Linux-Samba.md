@@ -5,8 +5,7 @@ title: Linux Samba
 
 {{ page.title }}
 ================
-<pre>
-<code>
+
 yum install samba samba-client samba-common
 cd /etc/samba/
 mv smb.conf smb.confbak
@@ -30,5 +29,3 @@ smbpasswd -a username
 windows下尝试访问
 
 如果失败chown一下
-</code>
-</pre>
