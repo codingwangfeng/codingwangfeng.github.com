@@ -85,6 +85,11 @@ string replace(const string& str, const string& src, const string& dest)
         pos_begin = pos + 1;
         pos = str.find(src, pos_begin);
     }
+    if (pos_begin < str.length()) {
+        ret.append(str.begin() + pos_begin, str.end());
+    }
+    return ret;
+}
 
 </code>
 </pre>
