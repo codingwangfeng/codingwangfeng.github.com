@@ -33,4 +33,4 @@ guest ok = yes
 
 windows下尝试访问
 
->如果失败chown一下
+> 如果失败chown一下
