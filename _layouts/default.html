@@ -1,74 +1,69 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>{{ page.title }}</title>
-   <meta name="author" content="WangFeng's Blog" />
-   <meta name="readability-verification" content="QCzSs992GxmRYRKVpPeZ6LE2tS8aYKxsSSQKV8YM"/>
+	<meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+	<meta name="author" content="Brian Jones" />
+	<meta name="robots" content="all" />
 
-   <!-- syntax highlighting CSS -->
-   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+	<title>{{ page.title }}</title>
+	
+	<style type="text/css" media="all">
+		@import "/static/css/mojobojo.css";
+		@import "/static/css/syntax.css";
+	</style>
 
-   <!-- Homepage CSS -->
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+   <script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+   <script type="text/javascript">
+       _uacct = "UA-1531113-1";
+       urchinTracker();
+   </script>
 
-   <!-- Typekit -->
-   <script type="text/javascript" src="http://use.typekit.com/jpd0pfm.js"></script>
-   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script type="text/javascript">
+	    // var disqus_developer = true; 
+	</script>
+
+	<script type="text/javascript">
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id',
+                       '4d8d68561651b7285a000017');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+	
 </head>
-<body>
 
-<!-- ClickTale Top part -->
-<script type="text/javascript">
-var WRInitTime=(new Date()).getTime();
-</script>
-<!-- ClickTale end of Top part -->
+<body id="main">
 
-<div class="site">
-    <div class="title">
-    <img src='/images/author.jpg' /><a href="/">WangFeng's Blog</a>
-    <a class="extra" href="/">HOME</a>
-  </div>
-  
-  {{ content }}
-  
-  <div class="footer">
-    <div class="contact">
-      <p>
-        codingwangfeng<br />
-        cofounder of <a href="http://github.com/">GitHub</a><br />
-        stevinwang@126.com
-      </p>
-    </div>
-    <div class="contact">
-      <p>
-        <a href="http://github.com/codingwangfeng/">github.com/codingwangfeng</a><br />
-      </p>
-    </div>
-  </div>
-</div>
-
-<!-- ClickTale Bottom part -->
-<div id="ClickTaleDiv" style="display: none;"></div>
-<script type="text/javascript">
-if(document.location.protocol!='https:')
-  document.write(unescape("%3Cscript%20src='http://s.clicktale.net/WRb.js'%20type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-if(typeof ClickTale=='function') ClickTale(206,0.3,"www03");
-</script>
-<!-- ClickTale end of Bottom part -->
-
-<!-- Google Analytics -->
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-var pageTracker = _gat._getTracker("UA-6016902-1");
-pageTracker._trackPageview();
-</script>
-<!-- Google Analytics end -->
-
+	<div id="content">
+		<div id="header" align="center">
+			<h1><a href="/" title="mojobojo.com">{{ site.title }}</a></h1>
+		</div>
+		
+		<div id="content_body">
+			{{ content }}
+		</div>
+		
+		<div id="footer">
+			<div id="navigation">
+				<span class="navitem"><a href="http://github.com/boj" title="bojo's github repo">GitHub</a></span> |
+				<span class="navitem"><a href="/resume.html" title="Brian Jones' resume">Resume</a></span> |
+				<span class="navitem"><a href="/static/pgp.txt" title="PGP Key">PGP Key</a></span> |
+				<span class="navitem"><a href="http://twitter.com/mojobojo" title="twitter">Twitter</a></span> |
+				<span class="navitem"><a href="http://mojobojo.tumblr.com/" title="personal blog">Personal Blog</a></span> |
+				<span class="navitem">
+					<a href="http://feeds.feedburner.com/MojobojoDotCom" rel="alternate" type="application/rss+xml">
+						<img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/>
+					</a>
+				</span>
+			</div>
+		</div>
+	</div>
+	
 </body>
 </html>
