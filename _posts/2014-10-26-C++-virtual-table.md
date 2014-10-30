@@ -55,7 +55,35 @@ class CBase {
             std::cout << "CBase::" << __func__ << std::endl;
         }
 };
-};
+typedef void(*Fun)(void);
+int main(int argc, char** argv) {
+    CBase b;
+    int* vtableAddr = (int*)&b;
+    Fun f = NULL;
+    std::cout << "VTable addr:" << vtableAddr << std::endl;
+    f = (Fun)*((int*)*vtableAddr);
+    std::cout << "VTable addr:" << (int*)*vtableAddr+0 << std::endl;
+    f();
+    f = (Fun)*((int*)*vtableAddr+2);
+    std::cout << "VTable addr:" << (int*)*vtableAddr+2 << std::endl;
+    f();
+    f = (Fun)*((int*)*vtableAddr+4);
+    std::cout << "VTable addr:" << (int*)*vtableAddr+4 << std::endl;
+    f();
+    return 0;
+}
+VTable addr:0x7fff02e24580
+VTable addr:0x400c70
+CBase::v1
+VTable addr:0x400c78
+CBase::v2
+VTable addr:0x400c80
+CBase::v3
 </code>
 </pre>
+##多重继承中
+* 每个父类都有自己的虚表。
+* 子类的成员函数被放到了第一个父类的表中。
+* 内存布局中，其父类布局依次按声明顺序排列。
+* 每个父类的虚表中的f()函数都被overwrite成了子类的f()。这样做就是为了解决不同的父类类型的指针指向同一个子类实例，而能够调用到实际的函数。
 
