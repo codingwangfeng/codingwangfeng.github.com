@@ -79,8 +79,5 @@ string replace(const string& str, const string& src, const string& dest)
     string ret;
     string::size_type pos_begin = 0;
     string::size_type pos = str.find(src);
-    while (pos != string::npos) {
-        ret.append(str.data() + pos_begin, pos - pos_begin);
-        ret += dest;
 </code>
 </pre>
