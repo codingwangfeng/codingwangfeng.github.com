@@ -48,6 +48,13 @@ class CBase {
         virtual void v1(){
             std::cout << "CBase::" << __func__ << std::endl;
         }
+        virtual void v2(){
+            std::cout << "CBase::" << __func__ << std::endl;
+        }
+        virtual void v3(){
+            std::cout << "CBase::" << __func__ << std::endl;
+        }
+};
 };
 </code>
 </pre>
