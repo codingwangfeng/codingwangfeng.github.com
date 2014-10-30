@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 几个准备看的开源项目
+title: Open Source to Read
 ---
 
 {{ page.title }}
