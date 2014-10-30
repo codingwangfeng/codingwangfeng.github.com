@@ -5,7 +5,8 @@ title: C++ string lib
 
 {{ page.title }}
 ================
-```
+<pre>
+<code>
 #include <string>
 #include <vector>
 
@@ -91,4 +92,5 @@ string replace(const string& str, const string& src, const string& dest) {
     }
     return ret;
 }
-```
+</code>
+</pre>

@@ -38,7 +38,8 @@ title: C++ sizeof classname
 </code>
 
 **因此每个对象所占用空间是其数据成员的空间，注意这里static不算是对象的空间**
-```c++
+<pre>
+<code>
 class CBase {
     public:
         CBase(){}
@@ -50,7 +51,8 @@ class CBase {
         int nCount;
         char ch;
 };
-```
+</code>
+</pre>
 因此sizeof CBase 大小是 sizeof int + sizeof char = 5
 问题来了，相同代码段，如何操作不同对象的数据？
 各对象有自己的this指针，
@@ -87,7 +89,8 @@ class CBase{
 </pre>
 sizeof(CBase) == 8;
 因为有虚函数，故会生一个虚函数表指针vptr，64bits机器大小为8
-```c++
+<pre>
+<code>
 class CBase{
     public:
         CBase(){}
@@ -108,7 +111,9 @@ int main(int argc, char** argv) {
     std::cout << sizeof(CBase2) << std::endl;
     std::cout << sizeof(CChild) << std::endl;
     return 0;
-}```
+}
+</code>
+</pre>
 输出：
 <pre>
 <code>
