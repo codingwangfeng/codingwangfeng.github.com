@@ -8,7 +8,7 @@ h1. 模板特化
 > - 利用关于类型的特殊知识，别写比从模板实例化来的函数更有效率的代码。
 
 例子：     
-```c++
+```C++
 template <typename T>
 int compare(const T& a, const T& b){
     if(a < b) return -1;
