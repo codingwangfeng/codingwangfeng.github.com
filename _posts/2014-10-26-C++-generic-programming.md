@@ -9,10 +9,10 @@ title: C++模板与泛型
 
 例子：     
 `template <typename T>
-`int compare(const T& a, const T& b){
-`    if(a < b) return -1;
-`    if(b < a) return  1;
-`    return 0;
+``int compare(const T& a, const T& b){
+``    if(a < b) return -1;
+``    if(b < a) return  1;
+``    return 0;
 `}
 ## 函数模板的特化     
 **模板特化**是一个定义，在该定义中一个或多模板形参的实际类型或者实际值是指定的。特化的形式如下：     
