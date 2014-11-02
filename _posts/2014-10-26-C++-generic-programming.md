@@ -9,7 +9,7 @@ title: C++模板与泛型
 
 例子：     
 <pre> <code> 
-template <typename T>
+template &lt;typename T&gt;
 int compare(const T& a, const T& b){
     if(a < b) return -1;
     if(b < a) return  1;
