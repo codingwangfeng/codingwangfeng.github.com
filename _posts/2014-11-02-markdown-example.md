@@ -1,3 +1,7 @@
+---
+layout: post
+title: Markdown Exmaple
+---
 Welcome to StackEdit!
 ===================
 
