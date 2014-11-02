@@ -8,7 +8,8 @@ title: C++模板与泛型
 > - 利用关于类型的特殊知识，别写比从模板实例化来的函数更有效率的代码。
 
 例子：     
-<pre> <code> template <typename T>
+<pre> <code> 
+template <typename T>
 int compare(const T& a, const T& b){
     if(a < b) return -1;
     if(b < a) return  1;
